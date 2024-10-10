@@ -23,8 +23,9 @@
 
 .title {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-family: 'Courier New', Courier, monospace;
 
@@ -34,15 +35,22 @@
   align-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 83%;
   height: 100vh;
   text-shadow: 0 0 20px white;
   letter-spacing: 0px;
+  text-align: center;
 }
 
-@media (min-width: 500px) {
+/* Para asegurar que el texto dentro también esté centrado */
+.title span {
+  text-align: center;
+  display: inline-block;
+}
+
+@media (min-width:500px) {
   .title {
-    letter-spacing: 20px;
+    letter-spacing: 10px;
   }
 }
 
